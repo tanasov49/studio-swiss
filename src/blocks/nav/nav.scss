@@ -1,0 +1,19 @@
+.nav {
+    margin: 20px 0 0 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        position: fixed;
+        width: 100vw;
+        height: 480px;
+        left: 0;
+        top: 0;
+        transition: background 0.7s;
+        margin: 0;
+    }
+}
+.nav_active {
+    background: $colorBcg;
+}

@@ -1,0 +1,25 @@
+// Нормализация страницы
+@import '../vendor/normalize.scss';
+// Импорт миксинов и переменных
+@import '../scss/mixins.scss';
+@import '../scss/variables.scss';
+// Иморт шрифтов
+@import url(../fonts/fonts.scss);
+//Импорт стилей по каждому блоку
+@import '../blocks/page/page.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/header/__title/header__title.scss';
+@import '../blocks/nav/nav.scss';
+@import '../blocks/menu/menu.scss';
+@import '../blocks/menu-btn/menu-btn.scss';
+@import '../blocks/menu-btn/__span/menu-btn__span.scss';
+@import '../blocks/menu-item/__link/menu-item__link.scss';
+@import '../blocks/main/main.scss';
+@import '../blocks/section-about/section-about.scss';
+@import '../blocks/section-about/__image/section-about__image.scss';
+@import '../blocks/section-title/section-title.scss';
+@import '../blocks/section-text/section-text.scss';
+@import '../blocks/section-text/__text/section-text__text.scss';
+// body {
+//     margin: 0 auto;
+// }

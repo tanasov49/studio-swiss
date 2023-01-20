@@ -1,0 +1,50 @@
+.menu-btn__span {
+    display: block;
+    position: relative;
+    height: 2px;
+    background: $colorBlackText;
+    width: 100%;
+    top: 6px;
+    backface-visibility: hidden;
+    transition: 0.55s;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $colorBlackText;
+        top: 6px;
+        width: 100%;
+        height: 2px;
+        backface-visibility: hidden;
+        transition: 0.55s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: $colorBlackText;
+        width: 100%;
+        height: 2px;
+        top: 12px;
+        backface-visibility: hidden;
+        transition: 0.55s;
+    }
+}
+.menu-btn__span_click {
+    backface-visibility: hidden;
+    transform: rotate(50deg);
+    transition: transform 0.5s;
+    opacity: 1;
+    top: 6px;
+    background: $colorWhite;
+    &::before {
+        opacity: 0;
+    }
+    &::after {
+        backface-visibility: hidden;
+        top: 0px;
+        transform: rotate(-280deg);
+        transition: transform 0.5s;
+        background: $colorWhite;
+    }
+}

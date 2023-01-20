@@ -1,0 +1,21 @@
+.header__title {
+    @include font300Oswald;
+    font-size: 72px;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0.51em;
+    color: $colorBlackText;
+    max-width: 365px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        line-height: 85px;
+        max-width: 315px;
+        position: absolute;
+        top: 156px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
